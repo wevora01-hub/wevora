@@ -8,6 +8,7 @@
 
 <title>WEVORA | Luxury Fashion</title>
 
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
@@ -19,203 +20,196 @@ padding:0;
 box-sizing:border-box;
 }
 
+
 body{
+
 font-family:'Poppins',sans-serif;
-background:#f8f1e7;
+background:#fff;
 color:#222;
+
 }
 
 
-/* TOP BAR */
-
-.top-bar{
-background:#000;
-color:#d4af37;
-text-align:center;
-padding:10px;
-font-size:14px;
-letter-spacing:1px;
-}
-
-
-/* HEADER */
 
 header{
-background:#fff;
+
+background:#000;
+color:#fff;
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 6%;
-box-shadow:0 3px 15px rgba(0,0,0,.1);
+
 }
+
 
 
 .logo{
+
 font-family:'Playfair Display',serif;
-font-size:38px;
-letter-spacing:5px;
-color:#000;
+font-size:35px;
+letter-spacing:4px;
+
 }
+
 
 
 nav a{
+
+color:#fff;
 text-decoration:none;
-color:#222;
-margin:0 12px;
+margin-left:25px;
 font-size:15px;
+
 }
 
 
-.icons{
-font-size:20px;
-letter-spacing:10px;
-}
-
-
-/* HERO */
 
 .hero{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-height:85vh;
-background:#000;
-overflow:hidden;
-}
+
+height:90vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+
+url("https://images.unsplash.com/photo-1483985988355-763728e1935b")
+center/cover;
 
 
-.hero img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-
-.hero-center{
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
+
 color:white;
-padding:30px;
+
 }
 
 
-.hero-center h1{
+
+
+.hero h1{
+
 font-family:'Playfair Display',serif;
-font-size:65px;
-letter-spacing:8px;
-color:#d4af37;
+font-size:70px;
+letter-spacing:6px;
+
 }
 
 
-.hero-center h2{
-font-size:30px;
+
+
+.hero p{
+
+font-size:22px;
 margin:20px 0;
+
 }
 
 
-.hero-center p{
-font-size:18px;
-letter-spacing:2px;
-}
 
 
 .btn{
+
 display:inline-block;
 background:#d4af37;
 color:#000;
-padding:14px 35px;
-margin:15px 5px;
+padding:15px 35px;
+margin:10px;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
+
 }
 
 
 
-/* SECTION */
 
 .section{
-padding:70px 7%;
+
+padding:70px 8%;
 text-align:center;
+
 }
+
+
 
 
 .section h2{
+
 font-family:'Playfair Display',serif;
 font-size:42px;
-margin-bottom:40px;
+margin-bottom:35px;
+
 }
 
 
-
-/* CATEGORY */
-
-.categories{
-display:grid;
-grid-template-columns:repeat(6,1fr);
-gap:20px;
-}
-
-
-.category{
-background:#000;
-color:white;
-padding:25px 10px;
-border-radius:10px;
-font-weight:600;
-}
-
-
-
-/* PRODUCTS */
 
 .products{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
+
 }
+
 
 
 .product-card{
-background:white;
-padding:15px;
+
+background:#fff;
 box-shadow:0 10px 25px #ddd;
+padding:15px;
+
 }
+
 
 
 .product-card img{
+
 width:100%;
-height:300px;
+height:320px;
 object-fit:cover;
+
 }
+
 
 
 .product-card h3{
+
 margin:15px 0;
-font-size:20px;
+font-size:22px;
+
 }
 
 
+
 .price{
+
+font-size:20px;
 font-weight:bold;
-color:#b8860b;
+
 }
 
 
 .order-btn{
+
 display:inline-block;
-background:#000;
-color:#fff;
+margin-top:15px;
+background:#25D366;
+color:white;
 padding:10px 25px;
-border-radius:20px;
+border-radius:25px;
 text-decoration:none;
-margin-top:10px;
+
 }
 
-
 </style>
+
 
 </head>
 
@@ -223,17 +217,8 @@ margin-top:10px;
 <body>
 
 
-<!-- TOP BAR -->
-
-<div class="top-bar">
-✨ Free Shipping On Luxury Fashion Orders ✨
-</div>
-
-
-
-<!-- HEADER -->
-
 <header>
+
 
 <div class="logo">
 WEVORA
@@ -243,42 +228,21 @@ WEVORA
 <nav>
 
 <a href="#home">Home</a>
+
 <a href="#shop">Shop</a>
+
 <a href="#rent">Rent</a>
-<a href="#categories">Categories</a>
-<a href="#contact">Contact</a>
 
 </nav>
-
-
-<div class="icons">
-♡ 🛒
-</div>
 
 
 </header>
 
 
-
-
-
-<!-- HERO SECTION -->
-
-
 <section class="hero" id="home">
 
 
-<!-- LEFT FASHION MODEL -->
-
 <div>
-<img src="fashion-model.jpg" alt="Fashion Model">
-</div>
-
-
-
-<!-- CENTER CONTENT -->
-
-<div class="hero-center">
 
 
 <h1>
@@ -287,203 +251,116 @@ WEVORA
 
 
 <p>
-FASHION THAT DEFINES YOU
+Luxury Fashion • Rental • Accessories
 </p>
 
 
-<h2>
-SHOP • RENT • SHINE
-</h2>
-
-
-
 <a href="#shop" class="btn">
-SHOP TO OWN
+SHOP NOW
 </a>
 
 
 <a href="#rent" class="btn">
-RENT TO SLAY
+RENT NOW
 </a>
 
 
-
-</div>
-
-
-
-
-<!-- RIGHT BRIDAL MODEL -->
-
-
-<div>
-<img src="bridal-lehenga.jpg" alt="Bridal Lehenga">
-</div>
-
-
-
-</section>
-
-
-
-
-
-<!-- CATEGORY SECTION -->
-
-
-<section class="section" id="categories">
-
-
-<h2>
-Explore Categories
-</h2>
-
-
-
-<div class="categories">
-
-
-<div class="category">
-👗 Lehenga
-</div>
-
-
-<div class="category">
-✨ Western Wear
-</div>
-
-
-<div class="category">
-👜 Bags
-</div>
-
-
-<div class="category">
-💎 Accessories
-</div>
-
-
-<div class="category">
-👑 Rental Collection
-</div>
-
-
-<div class="category">
-🔥 New Arrivals
-</div>
-
-
 </div>
 
 
 </section>
-
-
-
-
-
-
-
-<!-- SHOP SECTION -->
-
-
 <section class="section" id="shop">
 
 
 <h2>
-SHOP TO OWN
+SHOP COLLECTION
 </h2>
-
 
 
 <div class="products">
 
 
 
+<!-- PRODUCT 1 -->
+
 <div class="product-card">
 
-<img src="lehenga.jpg">
+
+<img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8">
+
 
 <h3>
-Floral Embroidered Lehenga
+Product Name 1
 </h3>
+
 
 <p class="price">
 ₹ Price
 </p>
 
+
 <a class="order-btn" href="#">
 BUY NOW
 </a>
+
 
 </div>
 
 
 
 
+<!-- PRODUCT 2 -->
 
 <div class="product-card">
 
-<img src="gown.jpg">
+
+<img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc">
+
 
 <h3>
-Black Party Gown
+Product Name 2
 </h3>
+
 
 <p class="price">
 ₹ Price
 </p>
 
+
 <a class="order-btn" href="#">
 BUY NOW
 </a>
+
 
 </div>
 
 
 
 
+<!-- PRODUCT 3 -->
 
 <div class="product-card">
 
-<img src="bag.jpg">
+
+<img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561">
+
 
 <h3>
-Luxury Handbag
+Product Name 3
 </h3>
+
 
 <p class="price">
 ₹ Price
 </p>
 
-<a class="order-btn" href="#">
-BUY NOW
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="earrings.jpg">
-
-<h3>
-Kundan Earrings
-</h3>
-
-<p class="price">
-₹ Price
-</p>
 
 <a class="order-btn" href="#">
 BUY NOW
 </a>
 
-</div>
 
+</div>
 
 
 
@@ -494,17 +371,13 @@ BUY NOW
 
 
 
-
-
-
-<!-- RENT SECTION -->
 
 
 <section class="section" id="rent">
 
 
 <h2>
-RENT TO SLAY
+RENT COLLECTION
 </h2>
 
 
@@ -513,21 +386,30 @@ RENT TO SLAY
 
 
 
+
+<!-- RENT PRODUCT 1 -->
+
+
 <div class="product-card">
 
-<img src="bridal-lehenga.jpg">
+
+<img src="https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75">
+
 
 <h3>
-Bridal Lehenga
+Rental Product 1
 </h3>
+
 
 <p class="price">
 Rent ₹ Price / Day
 </p>
 
+
 <a class="order-btn" href="#">
 BOOK NOW
 </a>
+
 
 </div>
 
@@ -535,21 +417,59 @@ BOOK NOW
 
 
 
+<!-- RENT PRODUCT 2 -->
+
+
 <div class="product-card">
 
-<img src="coord.jpg">
+
+<img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae">
+
 
 <h3>
-White Co-ord Set
+Rental Product 2
 </h3>
+
 
 <p class="price">
 Rent ₹ Price / Day
 </p>
 
+
 <a class="order-btn" href="#">
 BOOK NOW
 </a>
+
+
+</div>
+
+
+
+
+
+<!-- RENT PRODUCT 3 -->
+
+
+<div class="product-card">
+
+
+<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+
+
+<h3>
+Rental Product 3
+</h3>
+
+
+<p class="price">
+Rent ₹ Price / Day
+</p>
+
+
+<a class="order-btn" href="#">
+BOOK NOW
+</a>
+
 
 </div>
 
@@ -560,44 +480,6 @@ BOOK NOW
 
 
 </section>
-
-
-
-
-
-<!-- BEST SELLERS -->
-
-
-<section class="section">
-
-
-<h2>
-Best Sellers
-</h2>
-
-
-<div class="product-card">
-
-<h3>
-✨ Premium Designer Collection
-</h3>
-
-<p>
-Trending luxury outfits loved by customers.
-</p>
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- WHY WEVORA -->
-
-
 <section class="section">
 
 
@@ -617,7 +499,7 @@ Why WEVORA?
 </h3>
 
 <p>
-Luxury fashion collection.
+High quality fashion collection
 </p>
 
 </div>
@@ -631,11 +513,10 @@ Luxury fashion collection.
 </h3>
 
 <p>
-Latest fashion styles.
+Latest fashion trends
 </p>
 
 </div>
-
 
 
 
@@ -646,11 +527,10 @@ Latest fashion styles.
 </h3>
 
 <p>
-WhatsApp booking available.
+Order easily on WhatsApp
 </p>
 
 </div>
-
 
 
 
@@ -661,7 +541,7 @@ WhatsApp booking available.
 </h3>
 
 <p>
-Designer outfits for occasions.
+Designer outfits for special occasions
 </p>
 
 </div>
@@ -677,10 +557,6 @@ Designer outfits for occasions.
 
 
 
-
-<!-- FOOTER -->
-
-
 <footer>
 
 
@@ -694,7 +570,7 @@ Luxury Fashion • Rental • Accessories
 </p>
 
 
-<p id="contact">
+<p>
 WhatsApp Orders Available
 </p>
 
@@ -727,26 +603,9 @@ padding:40px;
 @media(max-width:768px){
 
 
-.hero{
+header{
 
-grid-template-columns:1fr;
-height:auto;
-
-}
-
-
-
-.hero img{
-
-height:450px;
-
-}
-
-
-
-.logo{
-
-font-size:30px;
+flex-direction:column;
 
 }
 
@@ -754,24 +613,34 @@ font-size:30px;
 
 nav{
 
-display:none;
+margin-top:15px;
 
 }
 
 
 
-.categories{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-
-.hero-center h1{
+.hero h1{
 
 font-size:42px;
 
 }
+
+
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+
+.section h2{
+
+font-size:30px;
+
+}
+
 
 
 }
@@ -779,6 +648,8 @@ font-size:42px;
 
 
 </style>
+
+
 
 
 
