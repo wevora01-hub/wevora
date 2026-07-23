@@ -6,190 +6,162 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WEVORA | Luxury Fashion</title>
+<title>WEVORA | Luxury Fashion Store</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<meta name="description" content="WEVORA Fashion - Premium Women's Wear, Designer Outfits, Rental Fashion & Accessories">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-
 body{
-font-family:'Poppins',sans-serif;
-background:#faf7f2;
-color:#111;
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#222;
 }
 
 
 header{
 
-position:fixed;
-top:0;
-width:100%;
-padding:15px 6%;
-background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:10;
-
+    background:#000;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 
 .logo{
 
-font-family:'Cormorant Garamond',serif;
-font-size:35px;
-letter-spacing:3px;
-color:#b08d57;
-
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    letter-spacing:3px;
 }
 
 
 nav a{
 
-text-decoration:none;
-color:#111;
-margin:0 12px;
-font-size:14px;
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:15px;
 
 }
-
 
 
 .hero{
 
-height:100vh;
+    height:90vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b")
+    center/cover;
 
-background:
-linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.45)
-),
-url("https://images.unsplash.com/photo-1595777457583-95e059d581b8");
-
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-padding-left:8%;
-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
 
 }
 
 
-
 .hero h1{
 
-font-family:'Cormorant Garamond',serif;
-font-size:70px;
-max-width:600px;
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    letter-spacing:5px;
 
 }
 
 
 .hero p{
 
-font-size:20px;
-margin:20px 0;
+    font-size:20px;
+    margin:20px 0;
 
 }
-
 
 
 .btn{
 
-display:inline-block;
-background:#b08d57;
-color:white;
-padding:15px 35px;
-border-radius:30px;
-text-decoration:none;
-margin-right:10px;
+    display:inline-block;
+    padding:14px 35px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    margin:10px;
+    font-weight:600;
+    border-radius:30px;
 
 }
 
 
-.btn.white{
+.section{
 
-background:white;
-color:#111;
-
-}
-
-
-section{
-
-padding:80px 7%;
+    padding:70px 8%;
+    text-align:center;
 
 }
 
 
-.title{
+.section h2{
 
-text-align:center;
-font-family:'Cormorant Garamond',serif;
-font-size:45px;
-margin-bottom:40px;
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:30px;
 
 }
 
 
 .cards{
 
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 
 }
 
 
 .card{
 
-height:350px;
-border-radius:20px;
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:end;
-padding:30px;
-color:white;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    overflow:hidden;
 
 }
 
 
-.shop{
+.card img{
 
-background-image:
-linear-gradient(#0008,#0008),
-url("https://images.unsplash.com/photo-1610030469983-98e550d6193c");
-
-}
-
-
-.rent{
-
-background-image:
-linear-gradient(#0008,#0008),
-url("https://images.unsplash.com/photo-1583391733981-8491c3d1f3c9");
+    width:100%;
+    height:320px;
+    object-fit:cover;
 
 }
 
 
-.card h2{
+.card h3{
 
-font-family:'Cormorant Garamond',serif;
-font-size:45px;
+    padding:15px;
+    font-size:20px;
 
 }
+
 
 </style>
 
@@ -211,6 +183,7 @@ WEVORA
 <a href="#">Home</a>
 <a href="#">Shop</a>
 <a href="#">Rent</a>
+<a href="#">Accessories</a>
 <a href="#">Contact</a>
 
 </nav>
@@ -218,176 +191,72 @@ WEVORA
 </header>
 
 
-
 <section class="hero">
+
 
 <div>
 
-<h1>
-Luxury Fashion For Every Occasion
-</h1>
-
+<h1>WEVORA</h1>
 
 <p>
-Buy Premium Outfits & Rent Designer Wear
+Luxury Fashion • Rental • Accessories
 </p>
 
 
-<a class="btn" href="#">
+<a href="#" class="btn">
 SHOP NOW
 </a>
 
 
-<a class="btn white" href="#">
+<a href="#" class="btn">
 RENT NOW
 </a>
 
 
 </div>
 
-</section>
 
+</section><section class="section">
 
-
-<section>
-
-
-<h2 class="title">
-Shop & Rent
+<h2>
+New Arrivals
 </h2>
 
 
 <div class="cards">
 
 
-<div class="card shop">
-
-<h2>
-Shop Collection
-</h2>
-
-</div>
-
-
-
-<div class="card rent">
-
-<h2>
-Rental Collection
-</h2>
-
-</div>
-
-
-</div>
-
-
-</section><section>
-
-<h2 class="title">
-Luxury Collections
-</h2>
-
-
-<div class="collection-grid">
-
-
-<div class="collection">
-<img src="https://images.unsplash.com/photo-1594552072238-b8a33785b1f8">
-<h3>Bridal Lehengas</h3>
-</div>
-
-
-<div class="collection">
-<img src="https://images.unsplash.com/photo-1583391733956-6c78276477e0">
-<h3>Traditional Wear</h3>
-</div>
-
-
-<div class="collection">
-<img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1">
-<h3>Indo Western</h3>
-</div>
-
-
-<div class="collection">
-<img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae">
-<h3>Designer Gowns</h3>
-</div>
-
-
-<div class="collection">
-<img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446">
-<h3>Party Wear</h3>
-</div>
-
-
-<div class="collection">
-<img src="https://images.unsplash.com/photo-1509631179647-0177331693ae">
-<h3>Garba Collection</h3>
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<section>
-
-<h2 class="title">
-New Arrivals
-</h2>
-
-
-<div class="products">
-
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
-
-<h3>Luxury Evening Dress</h3>
-
-<p>₹9999</p>
-
-</div>
-
-
-
-<div class="product">
+<div class="card">
 
 <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8">
 
-<h3>Designer Lehenga</h3>
-
-<p>₹14999</p>
-
-</div>
-
-
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3">
-
-<h3>Luxury Handbag</h3>
-
-<p>₹4999</p>
+<h3>
+Designer Lehengas
+</h3>
 
 </div>
 
 
 
-<div class="product">
+<div class="card">
 
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+<img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc">
 
-<h3>Western Collection</h3>
+<h3>
+Western Wear
+</h3>
 
-<p>₹7999</p>
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561">
+
+<h3>
+Luxury Accessories
+</h3>
 
 </div>
 
@@ -399,231 +268,219 @@ New Arrivals
 
 
 
-<section>
+<section class="section">
+
+<h2>
+Featured Collection
+</h2>
 
 
-<h2 class="title">
+<div class="cards">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae">
+
+<h3>
+Black Evening Dress
+</h3>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75">
+
+<h3>
+Bridal Lehenga
+</h3>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+
+<h3>
+Luxury Handbag
+</h3>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+
+<h3>
+White Co-ord Set
+</h3>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="section">
+
+
+<h2>
 Why WEVORA?
 </h2>
 
 
-<div class="features">
+<div class="cards">
 
+
+<div class="card">
+
+<h3>
+✨ Premium Quality
+</h3>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+✨ Fashion Rentals
+</h3>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+✨ Trendy Collection
+</h3>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+✨ Easy Ordering
+</h3>
+
+</div>
+
+
+</div>
+
+
+</section><footer>
 
 <div>
-<h3>✨ Premium Quality</h3>
-<p>Luxury fashion with perfect finishing.</p>
-</div>
-
-
-<div>
-<h3>💎 Luxury Collection</h3>
-<p>Designer outfits for every occasion.</p>
-</div>
-
-
-<div>
-<h3>👗 Fashion Rental</h3>
-<p>Premium outfits available on rent.</p>
-</div>
-
-
-<div>
-<h3>📲 Easy Booking</h3>
-<p>Book through WhatsApp easily.</p>
-</div>
-
-
-</div>
-
-
-</section><style>
-
-
-.collection-grid{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-
-}
-
-
-
-.collection img{
-
-width:100%;
-height:350px;
-object-fit:cover;
-border-radius:20px;
-
-}
-
-
-
-.collection h3{
-
-text-align:center;
-font-family:'Cormorant Garamond',serif;
-font-size:28px;
-margin-top:15px;
-
-}
-
-
-
-
-.products{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-
-}
-
-
-
-
-.product img{
-
-width:100%;
-height:350px;
-object-fit:cover;
-border-radius:15px;
-
-}
-
-
-
-.product h3{
-
-margin-top:15px;
-
-}
-
-
-
-.features{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-
-}
-
-
-
-.features div{
-
-background:white;
-padding:30px;
-border-radius:20px;
-text-align:center;
-
-}
-
-
-
-footer{
-
-background:#111;
-color:white;
-text-align:center;
-padding:50px;
-
-}
-
-
-
-footer h2{
-
-font-family:'Cormorant Garamond',serif;
-font-size:45px;
-
-}
-
-
-
-.whatsapp{
-
-position:fixed;
-right:25px;
-bottom:25px;
-background:#25D366;
-color:white;
-font-size:30px;
-padding:15px 20px;
-border-radius:50%;
-text-decoration:none;
-
-}
-
-
-
-
-@media(max-width:768px){
-
-
-nav{
-display:none;
-}
-
-
-
-.hero h1{
-
-font-size:45px;
-
-}
-
-
-
-.cards,
-.collection-grid,
-.products,
-.features{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-}
-
-
-
-</style>
-
-
-
-<footer>
 
 <h2>
 WEVORA
 </h2>
 
 <p>
-Luxury Fashion • BUY • RENT • ACCESSORIES
+Luxury Fashion Store
 </p>
 
 <p>
-WhatsApp | Instagram | Contact
+Fashion • Rental • Accessories
 </p>
 
+</div>
+
+
+<div style="margin-top:20px;">
 
 <p>
 © 2026 WEVORA. All Rights Reserved.
 </p>
+
+</div>
 
 
 </footer>
 
 
 
-<a class="whatsapp" href="#">
-💬
-</a>
+<style>
+
+footer{
+
+background:#000;
+color:white;
+padding:40px 8%;
+text-align:center;
+
+}
+
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+.logo{
+
+margin-bottom:15px;
+
+}
+
+
+nav a{
+
+margin:8px;
+display:inline-block;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+.section h2{
+
+font-size:30px;
+
+}
+
+
+}
+
+
+</style>
 
 
 
