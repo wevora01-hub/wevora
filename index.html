@@ -8,7 +8,6 @@
 
 <title>WEVORA | Luxury Fashion</title>
 
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
@@ -18,195 +17,333 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 
 body{
-
-font-family:'Poppins',sans-serif;
-background:#fff;
+background:#faf7f2;
 color:#222;
+}
+
+
+/* TOP BAR */
+
+.topbar{
+
+background:#111;
+color:white;
+padding:10px;
+font-size:13px;
+display:flex;
+justify-content:space-between;
+padding-left:50px;
+padding-right:50px;
 
 }
 
+
+/* HEADER */
 
 
 header{
 
-background:#000;
-color:#fff;
-padding:20px 8%;
+background:white;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:20px 50px;
 
 }
-
 
 
 .logo{
 
 font-family:'Playfair Display',serif;
-font-size:35px;
-letter-spacing:4px;
+font-size:38px;
+font-weight:bold;
+letter-spacing:3px;
+color:#b08d57;
+
+}
+
+
+.search{
+
+width:40%;
+
+}
+
+
+.search input{
+
+width:100%;
+padding:13px 20px;
+border:1px solid #ddd;
+border-radius:30px;
 
 }
 
 
 
-nav a{
+.icons{
 
-color:#fff;
+display:flex;
+gap:20px;
+font-size:14px;
+
+}
+
+
+
+/* MENU */
+
+
+.menu{
+
+background:#111;
+padding:15px;
+text-align:center;
+
+}
+
+
+.menu a{
+
+color:white;
 text-decoration:none;
-margin-left:25px;
-font-size:15px;
+margin:0 18px;
+font-size:14px;
 
 }
 
+
+.menu a:hover{
+
+color:#c9a35b;
+
+}
+
+
+
+/* HERO */
 
 
 .hero{
 
-height:90vh;
 
-background:
-
-linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.45)
-),
-
-url("https://images.unsplash.com/photo-1483985988355-763728e1935b")
-center/cover;
+height:650px;
+display:flex;
+overflow:hidden;
 
 
+}
+
+
+
+.hero-left,
+.hero-right{
+
+width:50%;
+position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
+background-size:cover;
+background-position:center;
 
+}
+
+
+
+.hero-left{
+
+background:
+linear-gradient(
+rgba(0,0,0,.35),
+rgba(0,0,0,.35)
+),
+url("https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc");
+
+}
+
+
+
+.hero-right{
+
+background:
+linear-gradient(
+rgba(0,0,0,.35),
+rgba(0,0,0,.35)
+),
+url("https://images.unsplash.com/photo-1610030469983-98e550d6193c");
+
+}
+
+
+
+.hero-content{
+
+text-align:center;
+color:white;
+
+}
+
+
+.hero-content h1{
+
+font-family:'Playfair Display',serif;
+font-size:65px;
+letter-spacing:5px;
+
+}
+
+
+
+.hero-content h2{
+
+font-size:30px;
+margin-bottom:20px;
+
+}
+
+
+.hero-content p{
+
+font-size:18px;
+margin-bottom:30px;
+
+}
+
+
+
+button{
+
+padding:15px 35px;
+border:none;
+background:#c9a35b;
+color:white;
+font-size:15px;
+cursor:pointer;
+margin:5px;
+
+}
+
+
+button:hover{
+
+background:white;
+color:#111;
+
+}
+
+
+
+.center-logo{
+
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+background:#111;
+padding:35px;
+color:#d5b06a;
+border-radius:50%;
+text-align:center;
+z-index:5;
+
+}
+
+
+.center-logo h1{
+
+font-family:'Playfair Display';
+font-size:35px;
+
+}
+
+
+
+.center-logo p{
+
+font-size:12px;
 color:white;
 
 }
 
 
 
-
-.hero h1{
-
-font-family:'Playfair Display',serif;
-font-size:70px;
-letter-spacing:6px;
-
-}
+/* MOBILE */
 
 
+@media(max-width:768px){
 
 
-.hero p{
+.topbar{
 
-font-size:22px;
-margin:20px 0;
+display:none;
 
 }
 
 
+header{
+
+padding:20px;
+flex-direction:column;
+gap:20px;
+
+}
 
 
-.btn{
+.search{
 
-display:inline-block;
-background:#d4af37;
-color:#000;
-padding:15px 35px;
+width:90%;
+
+}
+
+
+.menu a{
+
+display:block;
 margin:10px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
 
 }
 
 
+.hero{
 
-
-.section{
-
-padding:70px 8%;
-text-align:center;
+height:auto;
+flex-direction:column;
 
 }
 
 
-
-
-.section h2{
-
-font-family:'Playfair Display',serif;
-font-size:42px;
-margin-bottom:35px;
-
-}
-
-
-
-.products{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-
-}
-
-
-
-.product-card{
-
-background:#fff;
-box-shadow:0 10px 25px #ddd;
-padding:15px;
-
-}
-
-
-
-.product-card img{
+.hero-left,
+.hero-right{
 
 width:100%;
-height:320px;
-object-fit:cover;
+height:500px;
 
 }
 
 
+.center-logo{
 
-.product-card h3{
-
-margin:15px 0;
-font-size:22px;
+display:none;
 
 }
 
 
+.hero-content h1{
 
-.price{
-
-font-size:20px;
-font-weight:bold;
+font-size:40px;
 
 }
 
 
-.order-btn{
-
-display:inline-block;
-margin-top:15px;
-background:#25D366;
-color:white;
-padding:10px 25px;
-border-radius:25px;
-text-decoration:none;
-
 }
+
+
 
 </style>
 
@@ -217,6 +354,26 @@ text-decoration:none;
 <body>
 
 
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+<div>
+Free Shipping Across India ✨
+</div>
+
+<div>
+Track Order | Help & Support | WhatsApp
+</div>
+
+</div>
+
+
+
+<!-- HEADER -->
+
+
 <header>
 
 
@@ -225,83 +382,301 @@ WEVORA
 </div>
 
 
-<nav>
+<div class="search">
 
-<a href="#home">Home</a>
+<input type="text" placeholder="Search Designer Wear...">
 
-<a href="#shop">Shop</a>
+</div>
 
-<a href="#rent">Rent</a>
 
-</nav>
+<div class="icons">
+
+<span>♡ Wishlist</span>
+
+<span>♙ Account</span>
+
+<span>🛒 Cart</span>
+
+</div>
 
 
 </header>
 
 
-<section class="hero" id="home">
 
 
-<div>
+<!-- MENU -->
 
 
-<h1>
-WEVORA
-</h1>
+<div class="menu">
+
+<a href="#">Home</a>
+
+<a href="#">Shop</a>
+
+<a href="#">Lehengas</a>
+
+<a href="#">Western Wear</a>
+
+<a href="#">Bags</a>
+
+<a href="#">Accessories</a>
+
+<a href="#">Rental</a>
+
+<a href="#">New Arrivals</a>
+
+<a href="#">Contact</a>
 
 
-<p>
-Luxury Fashion • Rental • Accessories
-</p>
+</div>
 
 
-<a href="#shop" class="btn">
+
+
+<!-- HERO -->
+
+
+<section class="hero">
+
+
+<div class="hero-left">
+
+
+<div class="hero-content">
+
+<h2>SHOP TO OWN</h2>
+
+<h1>Fashion</h1>
+
+<p>Premium Western • Ethnic • Accessories</p>
+
+
+<button>
 SHOP NOW
-</a>
+</button>
 
 
-<a href="#rent" class="btn">
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="hero-right">
+
+
+<div class="hero-content">
+
+
+<h2>RENT TO SLAY</h2>
+
+<h1>Luxury</h1>
+
+
+<p>Designer Lehenga • Garba • Premium Dresses</p>
+
+
+<button>
 RENT NOW
-</a>
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="center-logo">
+
+<h1>WEVORA</h1>
+
+<p>Fashion • Rental • Accessories</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+</body>
+
+</html><!-- CATEGORY SECTION -->
+
+<section class="categories">
+
+<h2>Explore Categories</h2>
+
+<div class="category-box">
+
+
+<div class="circle">
+<img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8">
+<p>Lehengas</p>
+</div>
+
+
+<div class="circle">
+<img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e">
+<p>Western Wear</p>
+</div>
+
+
+<div class="circle">
+<img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
+<p>Bags</p>
+</div>
+
+
+<div class="circle">
+<img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338">
+<p>Accessories</p>
+</div>
+
+
+<div class="circle">
+<img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446">
+<p>Rental</p>
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- FEATURED COLLECTION -->
+
+
+<section class="products">
+
+
+<h2>Featured Collection</h2>
+
+
+<div class="product-grid">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+
+<h3>Black Evening Dress</h3>
+
+<p>Premium Western Wear</p>
+
+<h4>₹ Price</h4>
+
+<button>WhatsApp Order</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65">
+
+<h3>Designer Lehenga</h3>
+
+<p>Wedding Collection</p>
+
+<h4>₹ Price</h4>
+
+<button>WhatsApp Order</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa">
+
+<h3>Luxury Handbag</h3>
+
+<p>Premium Accessories</p>
+
+<h4>₹ Price</h4>
+
+<button>WhatsApp Order</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e">
+
+<h3>White Co-ord Set</h3>
+
+<p>Modern Fashion</p>
+
+<h4>₹ Price</h4>
+
+<button>WhatsApp Order</button>
+
+</div>
+
+
 
 
 </div>
 
 
 </section>
-<section class="section" id="shop">
-
-
-<h2>
-SHOP COLLECTION
-</h2>
-
-
-<div class="products">
 
 
 
-<!-- PRODUCT 1 -->
-
-<div class="product-card">
 
 
-<img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8">
+
+<!-- RENT COLLECTION -->
 
 
-<h3>
-Product Name 1
-</h3>
+<section class="rent-section">
 
 
-<p class="price">
-₹ Price
-</p>
+<h2>Rent Collection</h2>
 
 
-<a class="order-btn" href="#">
-BUY NOW
-</a>
+
+<div class="product-grid">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c">
+
+
+<h3>Royal Bridal Lehenga</h3>
+
+<p>Rental Starting Soon</p>
+
+<h4>₹ Rent Price</h4>
+
+<button>Book Rental</button>
 
 
 </div>
@@ -309,58 +684,43 @@ BUY NOW
 
 
 
-<!-- PRODUCT 2 -->
 
-<div class="product-card">
+<div class="card">
 
+<img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2">
+
+
+<h3>Garba Look</h3>
+
+<p>Festive Collection</p>
+
+<h4>₹ Rent Price</h4>
+
+<button>Book Rental</button>
+
+
+</div>
+
+
+
+
+
+<div class="card">
 
 <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc">
 
 
-<h3>
-Product Name 2
-</h3>
+<h3>Premium Western Dress</h3>
 
+<p>Party Wear Rental</p>
 
-<p class="price">
-₹ Price
-</p>
+<h4>₹ Rent Price</h4>
 
-
-<a class="order-btn" href="#">
-BUY NOW
-</a>
+<button>Book Rental</button>
 
 
 </div>
 
-
-
-
-<!-- PRODUCT 3 -->
-
-<div class="product-card">
-
-
-<img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561">
-
-
-<h3>
-Product Name 3
-</h3>
-
-
-<p class="price">
-₹ Price
-</p>
-
-
-<a class="order-btn" href="#">
-BUY NOW
-</a>
-
-
-</div>
 
 
 
@@ -373,42 +733,188 @@ BUY NOW
 
 
 
-<section class="section" id="rent">
+<style>
 
 
-<h2>
-RENT COLLECTION
-</h2>
+/* CATEGORY */
+
+
+.categories{
+
+padding:70px 50px;
+text-align:center;
+
+}
+
+
+.categories h2,
+.products h2,
+.rent-section h2{
+
+font-family:'Playfair Display';
+font-size:40px;
+margin-bottom:40px;
+
+}
 
 
 
-<div class="products">
+.category-box{
+
+display:flex;
+justify-content:center;
+gap:35px;
+flex-wrap:wrap;
+
+}
 
 
 
+.circle img{
 
-<!-- RENT PRODUCT 1 -->
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #c9a35b;
 
-
-<div class="product-card">
-
-
-<img src="https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75">
-
-
-<h3>
-Rental Product 1
-</h3>
+}
 
 
-<p class="price">
-Rent ₹ Price / Day
-</p>
+.circle p{
+
+margin-top:15px;
+font-weight:600;
+
+}
 
 
-<a class="order-btn" href="#">
-BOOK NOW
-</a>
+
+/* PRODUCTS */
+
+
+.products,
+.rent-section{
+
+padding:60px 50px;
+text-align:center;
+
+}
+
+
+
+.product-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+
+}
+
+
+
+.card{
+
+background:white;
+padding:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.card img{
+
+width:100%;
+height:350px;
+object-fit:cover;
+
+}
+
+
+.card h3{
+
+margin-top:15px;
+font-family:'Playfair Display';
+
+}
+
+
+.card p{
+
+font-size:14px;
+color:#777;
+
+}
+
+
+.card h4{
+
+color:#b08d57;
+margin:15px;
+
+}
+
+
+.card button{
+
+background:#111;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.product-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.product-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style><!-- PROMO BANNERS -->
+
+
+<section class="promo">
+
+
+<div class="promo-box shop-banner">
+
+
+<div>
+
+<h2>SHOP TO OWN</h2>
+
+<p>Discover Premium Fashion For Every Occasion</p>
+
+<button>EXPLORE SHOP</button>
+
+</div>
 
 
 </div>
@@ -416,30 +922,69 @@ BOOK NOW
 
 
 
-
-<!-- RENT PRODUCT 2 -->
-
-
-<div class="product-card">
+<div class="promo-box rent-banner">
 
 
-<img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae">
+<div>
+
+<h2>RENT TO SLAY</h2>
+
+<p>Designer Looks Without Buying</p>
+
+<button>EXPLORE RENTAL</button>
+
+</div>
 
 
-<h3>
-Rental Product 2
-</h3>
+</div>
 
 
-<p class="price">
-Rent ₹ Price / Day
-</p>
+
+</section>
 
 
-<a class="order-btn" href="#">
-BOOK NOW
-</a>
 
+
+
+
+
+<!-- BEST SELLERS -->
+
+
+<section class="best">
+
+
+<h2>Best Sellers</h2>
+
+
+<div class="product-grid">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1506629905607-d9c297d3a1a1">
+
+<h3>Luxury Ethnic Wear</h3>
+
+<p>Trending Collection</p>
+
+<h4>₹ Price</h4>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3">
+
+<h3>Designer Western Dress</h3>
+
+<p>Premium Collection</p>
+
+<h4>₹ Price</h4>
 
 </div>
 
@@ -447,102 +992,31 @@ BOOK NOW
 
 
 
-<!-- RENT PRODUCT 3 -->
-
-
-<div class="product-card">
-
+<div class="card">
 
 <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
 
+<h3>Luxury Accessories</h3>
 
-<h3>
-Rental Product 3
-</h3>
+<p>Elegant Style</p>
 
-
-<p class="price">
-Rent ₹ Price / Day
-</p>
-
-
-<a class="order-btn" href="#">
-BOOK NOW
-</a>
-
+<h4>₹ Price</h4>
 
 </div>
 
 
 
 
-</div>
 
+<div class="card">
 
-</section>
-<section class="section">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
 
+<h3>Wedding Collection</h3>
 
-<h2>
-Why WEVORA?
-</h2>
+<p>Exclusive Designs</p>
 
-
-
-<div class="products">
-
-
-<div class="product-card">
-
-<h3>
-✨ Premium Quality
-</h3>
-
-<p>
-High quality fashion collection
-</p>
-
-</div>
-
-
-
-<div class="product-card">
-
-<h3>
-✨ Trendy Designs
-</h3>
-
-<p>
-Latest fashion trends
-</p>
-
-</div>
-
-
-
-<div class="product-card">
-
-<h3>
-✨ Easy Ordering
-</h3>
-
-<p>
-Order easily on WhatsApp
-</p>
-
-</div>
-
-
-
-<div class="product-card">
-
-<h3>
-✨ Fashion Rental
-</h3>
-
-<p>
-Designer outfits for special occasions
-</p>
+<h4>₹ Price</h4>
 
 </div>
 
@@ -555,28 +1029,121 @@ Designer outfits for special occasions
 
 
 
+
+
+
+
+
+<!-- WHY WEVORA -->
+
+
+<section class="why">
+
+
+<h2>Why Choose WEVORA?</h2>
+
+
+
+<div class="why-grid">
+
+
+<div>
+<h3>✨ Premium Quality</h3>
+<p>Luxury fabrics and designer collections.</p>
+</div>
+
+
+
+<div>
+<h3>👗 Fashion Rentals</h3>
+<p>Wear designer outfits without buying.</p>
+</div>
+
+
+
+
+<div>
+<h3>🚚 Fast Delivery</h3>
+<p>Quick and safe delivery service.</p>
+</div>
+
+
+
+
+<div>
+<h3>🔒 Secure Payment</h3>
+<p>Easy and trusted payment options.</p>
+</div>
+
+
+
+<div>
+<h3>↩ Easy Returns</h3>
+<p>Simple return process.</p>
+</div>
+
+
+
+<div>
+<h3>💬 Support</h3>
+<p>Customer support anytime.</p>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
 
 
 <footer>
 
 
-<h2>
+<div class="footer-logo">
+
 WEVORA
-</h2>
+
+</div>
+
 
 
 <p>
-Luxury Fashion • Rental • Accessories
+Fashion • Rental • Accessories
 </p>
 
 
-<p>
-WhatsApp Orders Available
-</p>
+
+<div class="footer-links">
 
 
-<p>
+<a>Home</a>
+
+<a>Shop</a>
+
+<a>Rental</a>
+
+<a>Accessories</a>
+
+<a>Contact</a>
+
+
+</div>
+
+
+
+<p class="copyright">
+
 © 2026 WEVORA. All Rights Reserved.
+
 </p>
 
 
@@ -586,61 +1153,218 @@ WhatsApp Orders Available
 
 
 
+
+
 <style>
 
 
-footer{
+/* PROMO */
 
-background:#000;
-color:#fff;
-text-align:center;
-padding:40px;
+
+.promo{
+
+display:flex;
+gap:20px;
+padding:60px 50px;
 
 }
 
 
 
-@media(max-width:768px){
+.promo-box{
+
+height:350px;
+width:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background-size:cover;
+background-position:center;
+
+}
 
 
-header{
+
+.shop-banner{
+
+background-image:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("https://images.unsplash.com/photo-1483985988355-763728e1935b");
+
+}
+
+
+
+
+.rent-banner{
+
+background-image:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("https://images.unsplash.com/photo-1595777457583-95e059d581b8");
+
+}
+
+
+
+.promo h2{
+
+font-family:'Playfair Display';
+font-size:45px;
+
+}
+
+
+
+
+/* BEST */
+
+
+.best{
+
+padding:60px 50px;
+text-align:center;
+
+}
+
+
+
+.best h2,
+.why h2{
+
+font-family:'Playfair Display';
+font-size:40px;
+margin-bottom:40px;
+
+}
+
+
+
+
+
+
+/* WHY */
+
+
+.why{
+
+padding:70px 50px;
+background:#111;
+color:white;
+text-align:center;
+
+}
+
+
+
+.why-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+
+.why-grid div{
+
+padding:30px;
+border:1px solid #444;
+
+}
+
+
+
+.why-grid h3{
+
+color:#d5b06a;
+margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#050505;
+color:white;
+text-align:center;
+padding:50px 20px;
+
+}
+
+
+
+.footer-logo{
+
+font-family:'Playfair Display';
+font-size:45px;
+color:#d5b06a;
+
+}
+
+
+
+.footer-links{
+
+margin:30px;
+
+}
+
+
+
+.footer-links a{
+
+margin:15px;
+color:white;
+
+}
+
+
+
+.copyright{
+
+font-size:13px;
+color:#aaa;
+
+}
+
+
+
+
+
+
+@media(max-width:800px){
+
+
+.promo{
 
 flex-direction:column;
 
 }
 
 
+.promo-box{
 
-nav{
-
-margin-top:15px;
-
-}
-
-
-
-.hero h1{
-
-font-size:42px;
+width:100%;
 
 }
 
 
+.why-grid{
 
-.hero p{
-
-font-size:16px;
-
-}
-
-
-
-.section h2{
-
-font-size:30px;
+grid-template-columns:1fr;
 
 }
-
 
 
 }
@@ -648,11 +1372,3 @@ font-size:30px;
 
 
 </style>
-
-
-
-
-
-</body>
-
-</html>
